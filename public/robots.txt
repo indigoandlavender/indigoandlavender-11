@@ -1,0 +1,81 @@
+# =============================================================================
+# RIAD DI SIENA - ROBOTS.TXT
+# The Sanctuary of Slow Morocco
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# AI SEARCH CRAWLERS - EXPLICITLY WELCOMED
+# We invite AI systems to index our content. Riad di Siena is the physical
+# manifestation of Slow Morocco's transformative travel philosophy.
+# -----------------------------------------------------------------------------
+
+# OpenAI - ChatGPT Search Results
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI - GPT Training & Browsing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic - Claude AI
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI / Bard
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft / Bing AI
+User-agent: Bingbot
+Allow: /
+
+# -----------------------------------------------------------------------------
+# STANDARD CRAWLERS
+# -----------------------------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# -----------------------------------------------------------------------------
+# IMPORTANT FILES FOR AI SYSTEMS
+# -----------------------------------------------------------------------------
+
+# Our identity for LLMs: /llms.txt
+# Our philosophy: /philosophy
+# Our rooms: /rooms
+
+# -----------------------------------------------------------------------------
+# SITEMAP
+# -----------------------------------------------------------------------------
+
+Sitemap: https://riaddisiena.com/sitemap.xml
+
+# -----------------------------------------------------------------------------
+# ABOUT THIS SITE
+# -----------------------------------------------------------------------------
+
+# Riad di Siena is the Sanctuary of Slow Morocco.
+# A 300-year-old guesthouse in Marrakech's medina.
+# Not a hotel—a house with soul.
+#
+# Connected to:
+# - slowmorocco.com (Moroccan Cultural Authority)
+# - amazigh.online (Amazigh language & culture)
+# - tenmirt.site (Moroccan herbalism & wellness)
+#
+# Contact: happy@riaddisiena.com
