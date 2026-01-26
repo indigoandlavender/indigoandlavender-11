@@ -503,7 +503,9 @@ function BookingModalContent({
             data.bookedDates.forEach((booking: { start: string; end: string }) => {
               const start = new Date(booking.start);
               const end = new Date(booking.end);
-              for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+              // iCal DTEND is EXCLUSIVE: checkout is in the morning, so that date is available for new check-ins
+              // Use < instead of <= to exclude the end date from blocked dates
+              for (let d = new Date(start); d < end; d.setDate(d.getDate() + 1)) {
                 dates.push(d.toISOString().split("T")[0]);
               }
             });
